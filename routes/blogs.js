@@ -37,6 +37,7 @@ router.post('/saveblog',
         blog.user = req.user.id;
         blog.title = blogdata.title;
         blog.description = blogdata.description;
+        blog.username = blogdata.name;
         if (req.file !== undefined) {
             blog.imagename = req.file.path;
         }

@@ -15,6 +15,10 @@ const BlogSchema = new mongoose.Schema({
     },
     imagename: {
         type: String
+    },
+    username: {
+        type: String,
+        required: true
     }
 });
 
