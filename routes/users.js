@@ -53,7 +53,10 @@ async (req, res) => {
             if (err)
                 throw err;
             
-            res.json({ token })
+            let id = user.id;
+            let name = user.name;
+            let email = user.email;
+            res.json({ token, id, name, email })
         })
     }
     catch(err) {
